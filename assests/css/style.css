@@ -76,6 +76,21 @@ img {
 }
 
 /*===== CLASS CSS ===== */
+.loader {
+  min-height: 100vh;
+  font-family: Roboto, Arial;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -300,6 +315,7 @@ img {
 
 .skills__text {
   margin-bottom: var(--mb-4);
+  text-align: justify;
 }
 
 .skills__data {
@@ -467,6 +483,9 @@ img {
     align-items: center;
     text-align: initial;
   }
+  .about__text {
+    text-align: justify;
+  }
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
@@ -555,3 +574,4 @@ img {
     width: 450px;
   }
 }
+
