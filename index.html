@@ -279,35 +279,56 @@
 
         <div class="contact__container bd-grid">
           <form
-            onsubmit="sendEmail(); reset(); return false"
-            class="contact__form"
+            action="https://formsubmit.co/shiwangpande1@gmail.com"
+            method="POST"
           >
+            <div class="fields">
+              <div class="field name">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="field email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                class="contact__input"
+                required
+              />
+            </div>
+            <div class="field textarea">
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Message.."
+                name="message"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
+
+            <button class="contact__button button" type="submit">
+              Send message
+            </button>
             <input
-              type="text"
-              placeholder="Name"
-              class="contact__input"
-              id="name"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email id"
-              class="contact__input"
-              id="email"
-              required
-            />
-            <textarea
-              name=""
-              id="message"
-              cols="0"
-              rows="10"
-              class="contact__input"
-              placeholder="Message"
-            ></textarea>
-            <input
-              type="submit"
-              value="Submit"
-              class="contact__button button"
+              type="hidden"
+              name="_next"
+              value="https://shiwangpandey.me/thanks"
             />
           </form>
         </div>
@@ -336,12 +357,12 @@
 
     <!--===== MAIN JS =====-->
     <script src="assests/js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+    <!-- <script>
       function sendEmail() {
         Email.send({
           SecureToken: "8ee1a212-ffc8-4d39-8fd8-db242d40019a",
-
           To: "shiwangpandey586@gmail.com",
           From: document.getElementById("email").value,
           Subject: "New Contact form message",
@@ -358,7 +379,8 @@
             alert(err);
           });
       }
-    </script>
+    </script> -->
   </body>
 </html>
+
 
