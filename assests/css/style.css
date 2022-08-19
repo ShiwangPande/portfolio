@@ -218,8 +218,12 @@ img {
 }
 
 .home__title {
-  font-size: var(--big-font-size);
+  font-size: 43px;
   margin-bottom: var(--mb-5);
+}
+.home__title-1 {
+  font-size: var(--big-font-size);
+ 
 }
 
 .home__title-color {
@@ -574,4 +578,3 @@ img {
     width: 450px;
   }
 }
-
