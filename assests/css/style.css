@@ -376,6 +376,9 @@ img {
 .skills__python {
   width: 65%;
 }
+.skills__flutter {
+  width: 50%;
+}
 
 .skills__img {
   border-radius: 0.5rem;
